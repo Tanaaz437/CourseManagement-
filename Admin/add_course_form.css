@@ -1,0 +1,149 @@
+/* Global Reset */
+*{
+          margin: 0;
+          padding: 0;
+      }
+      
+      /* Background and Container */
+      body {
+          background-image: url("/images/Pic13.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      
+      .header {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+      }
+      
+      .header h2 {
+        
+          margin-top: 50px;
+          border-radius: 20px;
+          background-color:transparent;
+          font-size: 45px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      
+      .container {
+          margin: 85px;
+      }
+      
+      .form-element {
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 15px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 600px;
+          width: 100%;
+          margin: auto;
+      }
+      
+      /* Form Styling */
+      .form-row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+      }
+      
+      .form-row label {
+          width: 150px;
+          margin: 0;
+          font-size: 22px;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color: #ccc;
+          text-align: right;
+          margin-right: 10px;
+      }
+      
+      .form-row input,
+      .form-row select,
+      .form-row textarea {
+          flex: 1;
+          border-radius: 9px;
+          background-color: #fff;
+          padding: 20px;
+          border: 1px solid #ccc;
+      }
+      
+      /* Dropdown Styling */
+      .dropdown {
+          position: relative;
+          display: inline-block;
+          width: 100%;
+      }
+      
+      
+      .dropdown-menu {
+          display: none; /* Hidden by default */
+          position: absolute;
+          top: 100%; /* Position below the input */
+          left: 0;
+          padding: 10px;
+          background-color: #fff;
+          border-radius: 9px;
+          border: 1px solid #ccc;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          z-index: 1000;
+          max-width: 100%;
+      }
+      
+      .dropdown-menu label {
+          display: block;
+          padding: 5px 10px;
+          cursor: pointer;
+      }
+      
+      .dropdown-menu label:hover {
+          background-color: #f1f1f1;
+      }
+      
+      /* Button Styling */
+      button {
+          margin-top: 15px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+          font-size: 16px;
+          width: 100%;
+      }
+      
+      button:hover {
+          background-color: gray;
+      }
+      
+      /* Validation Styling */
+      input:invalid, select:invalid, textarea {
+          border: 2px solid red;
+      }
+      
+      input:valid, select:valid, textarea {
+          border: 2px solid green;
+      }
+      
+      input, select, textarea {
+          padding: 5px;
+          box-sizing: border-box;
+      }
+      
+      /* Dropdown visibility toggle */
+      .dropdown-menu.show {
+          display: block;
+      }
+      .dropdown-input{
+        margin-right: 50%;
+        width: 300px;
+        padding: 10px;
+        
+      }
+      
+      #visible{
+          width: 200px;
+          margin-left: 40%;
+          padding: 10px;
+          cursor: pointer;
+      }

@@ -1,0 +1,307 @@
+
+*{
+    margin: 0;
+}
+a {
+pointer-events: auto;
+}
+
+
+.navbar{
+    width: 100%;
+    height: 65px;
+    background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#aisc{
+    color: white;
+    width: 32px;
+    height: 32px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+#nav-icon i{
+    color:white;
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+    align-content: center;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.user-button{
+    background-color: transparent;
+    border: none;
+}
+.sidebar{
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    box-shadow: 1px 0 10px #9d9c9c;
+    padding: 0;
+    margin: 0; 
+    margin-right:20px; 
+    
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sidebar ul{
+    padding: 0;
+    margin: 0;
+
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between each menu item */
+}
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 15px;
+    color: black;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover{
+    color: gray;
+
+}
+
+.sidebar i {
+    margin-right: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu-divider {
+    height: 1px;
+    background-color:#444;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px;
+    border-right: 1px;
+    border-left: 1px;
+
+
+}/* basic styling of sidebars */
+
+
+/* .breadcrumb{
+display: inline-flex;
+
+background-color:#FF6F61;
+padding: 10px 15px;
+color: #fff;
+border-radius: 10px;
+font-weight: 600;
+font-family: sans-serif;
+letter-spacing: 1px;
+margin-bottom: 30px;
+margin-top:10px;
+
+} */
+
+.breadcrumb {
+    display: inline-flex;
+    background-color: #003366; /* Gold background color */
+    padding: 10px 15px;
+    color: #fff; /* White text color */
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.breadcrumb:hover {
+    background-color: #8fa9c2; /* Slightly darker gold on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.greyout {
+background-color: grey;
+color: white;
+}
+
+.breadcrumb ul {
+display:inline-flex;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+/* stylinggg */
+
+.breadcrumb ul {
+display: flex; /* Ensure flex layout for proper alignment */
+list-style: none;
+margin: 0;
+padding: 0;
+align-items: center; /* Center items vertically */
+}
+
+.breadcrumb li {
+margin-right: 10px;
+display: flex; /* Ensure flex layout for icon alignment */
+align-items: center; /* Center icon vertically */
+}
+
+#main-content {
+padding-left: 250px; /* Offset content to make space for the sidebar */
+padding-top:20px; /* Adjust top padding to avoid overlap with the navbar */
+}
+
+
+
+
+/* add_teacher_form styling */
+
+.form-element {
+background-color: rgba(0, 0, 0, 0.7);
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 600px;
+width: 100%;
+margin: auto;
+}
+
+.form-row {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.form-row label {
+width: 150px; /* Adjust width as needed */
+margin: 0;
+font-size: 14px;
+color: #ccc;
+text-align: right;
+margin-right: 10px;
+}
+
+.form-row input {
+flex: 1;
+border-radius: 9px;
+background-color: #fff;
+padding: 10px;
+border: 1px solid #ccc;
+}
+
+button {
+margin-top: 15px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+/* background-color: #4CAF50; */
+color:#333;
+cursor: pointer;
+font-size: 16px;
+width: 100%;
+}
+
+/* button:hover {
+background-color: #45a049;
+} */
+
+
+
+
+
+
+/* Base styles here */
+
+/* Media Query for Screens Smaller than 1200px */
+@media (max-width: 1200px) {
+section {
+  padding: 3rem 5%;
+}
+}
+
+/* Media Query for Screens Smaller than 991px */
+@media (max-width: 991px) {
+html {
+  font-size: 55%;
+}
+section {
+  padding: 3rem 2rem;
+}
+}
+
+/* Media Query for Screens Smaller than 768px */
+@media (max-width: 768px) {
+#menu-btn {
+  display: inline;
+}
+.header .navbar {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  border-top: var(--border);
+  padding: 2rem;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+.header .navbar.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.header .navbar a {
+  display: block;
+  margin: 2rem;
+  text-align: center;
+}
+}
+
+
+/* logout css */
+
+/* Dropdown styling */
+.logout-dropdown {
+position: absolute;
+top: 50px;
+right: 10px;
+background-color: white;
+border: 1px solid #ccc;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+z-index: 1000;
+}
+
+.logout-dropdown a {
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #333;
+}
+
+.logout-dropdown a:hover {
+background-color: #f1f1f1;
+}
+
+.user-button {
+margin-top:5%;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+
+
+
+

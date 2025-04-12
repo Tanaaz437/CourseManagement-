@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+}
+html{
+scroll-behavior: smooth;
+}
+a {
+pointer-events: auto;
+}
+.navbar{
+    width: 100%;
+    height: 65px;
+    background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: fixed; /* Make navbar fixed */
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000;
+}
+#aisc {
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#nav-icon {
+    margin-right: 20px;
+}
+#nav-icon i{
+    color:white;
+    height: 40px;
+    width: 40px;
+    align-self: flex-end;
+    align-content: center;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.user-button i {
+    color: white;
+    font-size: 30px;
+}
+.user-button{
+    background-color: transparent;
+    border: none;
+}
+.sidebar {
+    font-size: large;
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    top: 65px; /* Adjusted for the height of the navbar */
+    box-shadow: 1px 0 10px #9d9c9c;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 35px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.sidebar i {
+    margin-right: 10px;
+}
+
+.sidebar a:hover{
+    color: gray;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+.menu-divider {
+    height: 1px;
+    background-color: #444;
+    margin: 10px 0;
+}/* basic styling of  overall sidebars */
+
+
+/* teacher styling  starts here*/
+
+#main-content {
+    margin-left: 225px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    font-family: Arial, sans-serif;
+    padding-top: 75px; /* Adjusted for the height of the navbar */
+}
+.hidden {
+display: none;
+}     
+/* .breadcrumb{
+    display: inline-flex;
+    background-color: grey;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top:10px;
+
+} */
+.breadcrumb {
+display: inline-flex;
+background-color: #003366; /* Gold background color */
+padding: 10px 15px;
+color: #fff; /* White text color */
+border-radius: 10px;
+font-weight: 600;
+font-family: sans-serif;
+letter-spacing: 1px;
+margin-bottom: 30px;
+margin-top: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+.breadcrumb:hover {
+background-color: #8fa9c2; /* Slightly darker gold on hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.greyout {
+    background-color: grey;
+    color: white;
+}
+
+.breadcrumb ul {
+    display:inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-Teacher-page{
+    margin-left:225px;
+    padding: 20px;
+}
+
+.breadcrumb-teacher{
+    display: inline-flex;
+    background-color:grey;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+
+}
+
+.breadcrumb-teacher ul {
+    display:inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.add-teacher{
+    background-color: #3f51b5;
+    width:100px;
+    height: 35px;
+    position: absolute;
+    right:10px;
+    top:80px;
+    border-radius: 7px;
+}
+.add-teacher ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    height: 100%;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+
+#main-content{
+    position: relative;
+} 
+
+/* table styling */
+
+.table-class{
+    width:100%;
+    border-collapse: collapse;
+    margin-top:25px;
+    table-layout: fixed; /* Make column widths consistent */
+    
+}
+/* th,td{
+    padding:0%;
+    
+} */
+
+.table-class th, .table-class td {
+    border: 2px solid #ddd;
+    padding:0%; /* Reduced padding for compact rows */
+    text-align: center;
+    font-size: 16px; /* Slightly smaller font size */
+    line-height: 1.2; /* Adjusted line height for compact spacing */
+}
+/* th, td {
+    padding:4px; 
+    font-size: 16px; 
+    line-height: 1.2; 
+    text-align: center; 
+} */
+ 
+
+th{
+    background-color:#808080;
+    color: #fff;
+    font-weight:bold;
+    height:50px;
+    /* font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+td{
+    border: none;
+    /* justify-content: space-evenly; */
+    /* text-align: center; */
+    border-bottom: 1px solid #ccc; /* Add subtle border for separation */
+
+}
+
+.table-class tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-class tr:hover {
+    background-color: #f1f1f1;
+}
+/* table th,table td
+{
+    width:calc(100px / 7)
+} */
+
+table th, table td {
+    width: calc(100% / 7);
+    padding:0%;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #3f51b5;
+    
+    color:#333;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/* teacher page add button form styling..... when add gets clicked then  form shouold appear that form styling */
+
+
+.heading{
+
+color: #444;
+padding: 20px;
+background-color: transparent;
+
+}
+.heading h2{
+display: flex;
+justify-content: center;
+align-items:center;
+font-weight: 100px;
+font-size: 35px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+font-family: Arial, sans-serif;
+height: 100vh;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.form-element {
+background-color: rgba(0, 0, 0, 0.7);
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 600px;
+width: 100%;
+}
+
+.form-row {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+
+}
+
+.form-row label {
+width: 150px; /* Adjust width as needed */
+margin: 0;
+font-size: 14px;
+color: white;
+text-align: right;
+margin-right: 10px;
+color:#ccc;
+}
+
+.form-row input {
+flex: 1;
+border-radius: 9px;
+background-color: #fff;
+padding: 10px;
+border: 1px solid #ccc;
+}       
+
+button {
+margin-top: 15px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+/* background-color: #4CAF50; */
+color:#333;
+cursor: pointer;
+font-size: 16px;
+width: 100%;
+}
+
+/* teacher styling ends here */
+
+
+/* pagination styling here */
+
+/* Pagination styles */
+.pagination {
+margin: 20px 0;
+text-align: center;
+}
+
+.pagination a {
+display: inline-block;
+padding: 8px 16px;
+margin: 0 4px;
+border: 1px solid #ddd;
+color: #007bff;
+text-decoration: none;
+}
+
+.pagination a.active {
+background-color: #007bff;
+color: white;
+border: 1px solid #007bff;
+}
+
+.pagination a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.pagination a:disabled {
+color: #ccc;
+cursor: not-allowed;
+}
+
+/* logout */
+
+
+.hide {
+display: none;
+}
+
+
+
+
+
+/* Dropdown styling */
+.logout-dropdown {
+position: absolute;
+top: 50px;
+right: 10px;
+background-color: white;
+border: 1px solid #ccc;
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+z-index: 1000;
+}
+
+.logout-dropdown a {
+display: block;
+padding: 10px;
+text-decoration: none;
+color: #333;
+}
+
+.logout-dropdown a:hover {
+background-color: #f1f1f1;
+}
+
+.user-button {
+margin-top:5%;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+
+
+
+

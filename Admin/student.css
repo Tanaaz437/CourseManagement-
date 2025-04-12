@@ -1,0 +1,371 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#aisc {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#nav-icon {
+    margin-right: 20px;
+}
+
+
+.user-button {
+    background-color: transparent;
+    border: none;
+
+}
+
+.user-button i {
+    color: white;
+    font-size: 30px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    box-shadow: 1px 0 10px #9d9c9c;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 35px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a:hover {
+    color: gray;
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.menu-divider {
+    height: 1px;
+    background-color: #444;
+    margin: 10px 0;
+}
+
+/* Main Content Styling */
+#main-content {
+    margin-left: 225px;
+    padding: 20px;
+    background-color: #e9e9e9;
+    font-family: Arial, sans-serif;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    display: inline-flex;
+    background-color: grey;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.breadcrumb ul {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb li {
+    display: flex;
+    align-items: center;
+}
+
+/* Buttons Styling */
+.s1-button {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button#upload {
+    background-color: blueviolet;
+}
+
+button#add {
+    background-color: crimson;
+}
+
+/* Filter Section Styling */
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter input, .filter select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.filter input {
+    width: 200px;
+}
+
+.filter select {
+    width: 180px;
+}
+
+/* Button Group Styling */
+.btn1 {
+    margin-bottom: 20px;
+}
+
+button#clear {
+    background-color: #f44336;
+}
+
+button#apply {
+    background-color: #4CAF50;
+}
+
+/* Table Styling */
+.table-class {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-class th, .table-class td {
+    border: 2px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.table-class th {
+    background-color: #808080;
+    color: #fff;
+    font-weight: 200;
+    height: 50px;
+    font-size: 19px;
+}
+
+.table-class tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-class tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: #555;
+}
+
+/* modal styling */
+
+/* Modal styles */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Button styles */
+.btn-template,
+.btn-upload {
+background-color: blueviolet; /* Adjust color as needed */
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.btn-upload {
+background-color: green; /* Different color for upload button */
+}
+
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center; /* Center align the pagination links */
+    margin: 20px 0; /* Add space above and below the pagination */
+}
+
+.pagination a {
+    padding: 10px 15px; /* Add padding for better click area */
+    margin: 0 5px; /* Space between pagination links */
+    border: 1px solid #007BFF; /* Border color */
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.pagination a:hover {
+    background-color: #007BFF; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.pagination a.active {
+    background-color: #007BFF; /* Active page background */
+    color: white; /* Active page text color */
+    border: 1px solid #0056b3; /* Darker border for active page */
+    cursor: default; /* Prevent pointer cursor on active page */
+}
+.hide {
+    display: none;
+}
+
+/* Dropdown styling */
+.logout-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    }
+    
+    .logout-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    }
+    
+    .logout-dropdown a:hover {
+    background-color: #f1f1f1;
+    }
+
+.error-message{
+    color:#fff;
+    background-color: #ff4d4d92;
+    padding: 10px;
+    border-radius:5px;
+    text-align: center;
+    font-weight:400px;
+    font-size:30px;
+    margin-top: 10px;
+}    

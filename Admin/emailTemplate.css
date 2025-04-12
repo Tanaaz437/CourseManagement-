@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    pointer-events: auto;
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+}
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#aisc {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    top: 65px;
+    background-color: #f4f4f4;
+    box-shadow: 1px 0 10px #9d9c9c;
+}
+
+.sidebar ul {
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 45px; /* Adds padding for spacing */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 300; 
+}
+
+.sidebar a:hover {
+    color: gray;
+}
+
+#main-content {
+    margin-left: 225px;
+    padding: 30px;
+    background-color: #e9e9e9;
+    font-family: Arial, sans-serif;
+    padding-top: 75px; /* Adjusted for the height of the navbar */
+}
+
+.breadcrumb {
+    display: inline-flex;
+    background-color: grey;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 10px 0 30px 0;
+}
+
+
+
+
+h2{
+    margin-left: 300px;
+    
+}
+.table-class {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    margin-left: 300px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #808080;
+    color: #fff;
+    font-size: 19px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.table-class .action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.table-class .action-buttons button:hover {
+    background-color: #1e2e6d;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: #555;
+}
+
+/* modal styling */
+
+/* Modal styles */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+background-color: #fefefe;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Button styles */
+.btn-template,
+.btn-upload {
+background-color: blueviolet; /* Adjust color as needed */
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.btn-upload {
+background-color: green; /* Different color for upload button */
+}
+
+
+/* pagination */
+.pagination {
+    display: flex;
+    justify-content: center; /* Center align the pagination links */
+    margin: 20px 0; /* Add space above and below the pagination */
+}
+
+.pagination a {
+    padding: 10px 15px; /* Add padding for better click area */
+    margin: 0 5px; /* Space between pagination links */
+    border: 1px solid #007BFF; /* Border color */
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.pagination a:hover {
+    background-color: #007BFF; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.pagination a.active {
+    background-color: #007BFF; /* Active page background */
+    color: white; /* Active page text color */
+    border: 1px solid #0056b3; /* Darker border for active page */
+    cursor: default; /* Prevent pointer cursor on active page */
+}
+.hide {
+    display: none;
+}
+
+/* Dropdown styling */
+.logout-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    }
+    
+.logout-dropdown a {
+
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+    
+.logout-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 300px;
+}
+
+.filter input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    width: 250px;
+}
+
+.filter button {
+    padding: 8px 15px;
+    margin-left: 50px;
+    background-color: #2d89ef;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: #1c6bd6;
+}
+
+.filter-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 300px;
+}

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    pointer-events: auto;
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+}
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: #3f51b5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#aisc {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    top: 65px;
+    background-color: #f4f4f4;
+    box-shadow: 1px 0 10px #9d9c9c;
+}
+
+.sidebar ul {
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+.sidebar li {
+    list-style-type: none;
+    padding: 45px; /* Adds padding for spacing */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 300; 
+}
+
+.sidebar a:hover {
+    color: gray;
+}
+
+#main-content {
+    margin-left: 225px;
+    padding: 30px;
+    background-color: #e9e9e9;
+    font-family: Arial, sans-serif;
+    padding-top: 75px; /* Adjusted for the height of the navbar */
+}
+
+.breadcrumb {
+    display: inline-flex;
+    background-color: grey;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    margin: 10px 0 30px 0;
+}
+
+.table-class {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 85px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #808080;
+    color: #fff;
+    font-size: 19px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.table-class .action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.table-class .action-buttons button:hover {
+    background-color: #1e2e6d;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    padding: 8px 16px;
+    background-color: #3f51b5;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover, .pagination a.active {
+    background-color: #1e2e6d;
+    font-weight: bold;
+}
+
+.add-course {
+    margin-top: 20px; /* Space above the button */
+}
+.add-course a {
+    display: inline-block; /* Allows padding and margins */
+    padding: 10px 20px;
+    background-color: red; /* Red background */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    font-weight: bold; /* Bold text */
+}
+
+.add-course a:hover {
+    background-color: darkred; /* Darker red on hover */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+    #main-content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .table-class .action-buttons {
+        flex-direction: column;
+    }
+}
+#logout-dropdown {
+    background-color: #e9e9e9;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* course_staus .php css */
+#Previous{
+    background-color:#1e2e6d;
+    color: white;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    position:relative;
+    top:20px;
+    left:20px;
+    bottom: 20px;
+    z-index: 1000;
+
+
+}
+#Previous:hover{
+    background-color: #3f51b5;
+    
+}
+
+.mybody{
+    flex:1;
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /*   height: 10vh;  */
+    text-align: center;
+    margin: 0;
+    
+}
+.ongoing{
+    background-color: #1e2e6d; 
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.ongoing:hover{
+    background-color: #3f51b5;
+    cursor: pointer;
+    
+
+}
+.approved{
+    background-color: #1e2e6d; 
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+.approved:hover{
+    background-color: #3f51b5;
+    cursor: pointer;
+
+}

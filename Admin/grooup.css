@@ -1,0 +1,351 @@
+*{
+ margin: 0;
+}
+
+a {
+    pointer-events: auto;
+}
+.navbar{
+          width: 100%;
+          height: 65px;
+          background-color: #3f51b5;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+}
+#aisc{
+          color: white;
+          width: 32px;
+          height: 32px;
+          font-size: 30px;
+          margin-left: 20px;
+}
+#nav-icon i{
+          color:white;
+          height: 40px;
+          width: 40px;
+          align-self: flex-end;
+          align-content: center;
+          margin-right: 20px;
+          font-size: 30px;
+}
+.user-button{
+          background-color: transparent;
+          border: none;
+}
+.sidebar{
+          height: 100%;
+          width: 225px;
+          position: fixed;
+          box-shadow: 1px 0 10px #9d9c9c;
+          padding: 0;
+          margin: 0;  
+}
+.sidebar ul{
+          padding: 0;
+          margin: 0;
+      
+}
+     
+.sidebar li{
+          list-style-type: none;
+          size: 20px;
+          padding: 35px;
+          font: 15px sans-serif;
+          font-weight: bold;  
+      
+}
+      
+.sidebar a:hover{
+          color: gray;
+      
+}
+      
+.sidebar i {
+          margin-right: 10px;
+      
+}
+     
+a{
+          text-decoration: none;
+          color: black;
+     
+}
+     
+.menu-divider {
+          height: 1px;
+          background-color:#444;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px;
+          border-right: 1px;
+          border-left: 1px;
+      
+     
+}/* basic styling of sidebars */
+
+
+/*  group styling starts here */
+
+
+
+.group-list {
+          height: auto; 
+          display: flex; 
+          flex-wrap: wrap;
+          justify-content: center; 
+          margin: 15px auto; 
+          padding: 0 25px; 
+      }
+      
+      .group-item {
+          width: 200px;
+          margin: 10px; 
+          background-color: #c9f0dd;
+          padding: 20px;
+          border-radius: 5px;
+          height: 100px; 
+          text-align: center;
+          position: relative; /* Keep relative positioning to anchor the dropdown */
+      }
+      
+      .group-item i {
+          position: absolute; 
+          top: 5px;
+          right: 5px;
+          font-size: 20px; 
+      }
+      
+      /* Styling of menus */
+      
+      .menu-button {
+          border: none;
+          cursor: pointer;
+          font-size: 16px; 
+          outline: none;
+      }
+      
+      .group-menu {
+          display: none;
+          position: absolute; /* Position absolutely relative to the group-item */
+          top: 100%; /* Align the top of the dropdown to the bottom of the group-item */
+          right: 0; /* Align it to the right edge */
+          background-color: #fff;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+          z-index: 10; /* Ensure it stays on top */
+          min-width: 150px;
+          padding: 0;
+          list-style: none;
+      }
+      
+      .group-menu ul {
+          margin: 0;
+          padding: 0;
+      }
+      
+      .group-menu li {
+          padding: 8px 12px;
+          cursor: pointer;
+      }
+      
+      .group-menu li:hover {
+          background: #f0f0f0;
+      }
+      /* group styling ends here */
+      
+      .breadcrumb{
+          display: inline-flex;
+          background-color: grey;
+          padding: 10px 15px;
+          color: #fff;
+          border-radius: 10px;
+          font-weight: 600;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+          margin-bottom: 30px;
+          margin-top:10px;
+      
+      }
+      
+      .greyout {
+          background-color: grey;
+          color: white;
+      }
+      
+      .breadcrumb ul {
+          display:inline-flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+      
+      
+      /* stylinggg */
+      
+      .breadcrumb ul {
+          display: flex; /* Ensure flex layout for proper alignment */
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          align-items: center; /* Center items vertically */
+      }
+      
+      .breadcrumb li {
+          margin-right: 10px;
+          display: flex; /* Ensure flex layout for icon alignment */
+          align-items: center; /* Center icon vertically */
+      }
+      
+      #main-content {
+          padding-left: 230px; /* Offset content to make space for the sidebar */
+          padding-top:20px; /* Adjust top padding to avoid overlap with the navbar */
+      }
+      
+      
+      
+      
+      
+  /* styling */    
+
+  .breadcrumb-teacher ul {
+          display:inline-flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+}
+
+.add-teacher{
+          background-color: #3f51b5;
+          width:100px;
+          height: 35px;
+          position: absolute;
+          right:10px;
+          top:90px;
+          border-radius: 7px;
+}
+
+.add-teacher ul{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size:16px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color: #fff;
+          height: 100%;
+          margin:0;
+          padding:0;
+          list-style: none;
+}
+
+/* add group styling */      
+
+.main-container {
+   width:600px;
+   height:200px;
+   background-color: #3f51b5;
+   padding:20px;
+   background-color: white; 
+   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+}
+.Group-Name-box input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.btn{
+    display: flex;
+    
+    gap: 10px; 
+
+}
+.Group-Name-box .btn{
+    flex: 1;
+    padding:10px;
+    width:110px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+
+.Group-Name-box button:hover {
+    background-color: #0056b3; /* Darker shade when hovering */
+}
+      
+  /* logout */    
+  
+
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+/* Dropdown styling */
+.logout-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.logout-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.logout-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-button {
+    margin-top:5%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add-group-page {
+    background-image: url('/images/Pic13.jpg');
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   display:flex;
+   flex-direction: column;
+}
+
+.edit_group{
+    background-image: url('/images/Pic13.jpg');
+    background-size: cover;
+    background-position: center;
+   background-repeat: no-repeat;
+   min-height: 100vh;
+   display:flex;
+   flex-direction: column;
+}
+
+
+      
+
+     

@@ -1,0 +1,91 @@
+* {
+          margin: 0;
+      }
+      .navbar{
+          width: 100%;
+          height: 65px;
+          background-color: #3f51b5;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      #aisc{
+          color: white;
+          width: 32px;
+          height: 32px;
+          font-size: 30px;
+          margin-left: 20px;
+      }
+      #nav-icon i{
+          color:white;
+          height: 40px;
+          width: 40px;
+          align-self: flex-end;
+          align-content: center;
+          margin-right: 20px;
+          font-size: 30px;
+      }
+      .user-button{
+          background-color: transparent;
+          border: none;
+      }
+      .sidebar{
+          height: 100%;
+          width: 225px;
+          position: fixed;
+          box-shadow: 1px 0 10px #9d9c9c;
+          padding: 0;
+          margin: 0;  
+      }
+      .sidebar ul{
+          padding: 0;
+          margin: 0;
+      }
+      .sidebar li{
+          list-style-type: none;
+          size: 20px;
+          padding: 15px;
+          font: 15px sans-serif;
+          font-weight: bold;  
+      }
+      .sidebar a:hover{
+          color: gray;
+      }
+      .sidebar i {
+          margin-right: 10px;
+      }
+      a{
+          text-decoration: none;
+          color: black;
+      }
+      .menu-divider {
+          height: 1px;
+          background-color:#444;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          border-bottom: 1px;
+          border-right: 1px;
+          border-left: 1px;
+      
+      }
+      #main-content{
+          margin-left: 225px;
+          padding: 20px;
+      }
+      .breadcrumb{
+          display: inline-flex;
+          background-color: grey;
+          padding: 10px 15px;
+          color: #fff;
+          border-radius: 10px;
+          font-weight: 600;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+          margin-bottom: 30px;
+      }
+      .breadcrumb ul {
+          display:inline-flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }

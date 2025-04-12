@@ -1,0 +1,685 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    /*  */
+    
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    /*  */
+    /* font-family: 'Poppins', sans-serif; */
+    margin: 0;
+    padding: 0; 
+/*     background: url('/path/to/your/background.jpg') no-repeat center center fixed;
+ */  
+   background-size: cover;
+}
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* jhgbhjb */
+/* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+
+@keyframes sidebarSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+.navbar {
+    width: 100%;
+    height: 65px;
+    background-color: rgba(63, 81, 181, 0.9); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    
+} 
+/* refined css for navbar */
+
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.navbar .logout {
+    display: flex;
+    align-items: center; /* Aligns icon and text vertically */
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.navbar .logout i {
+    margin-right: 8px; /* Adds space between the icon and text */
+    font-size: 1rem;
+}
+
+.navbar .logout:hover {
+    background-color: #d32f2f; /* Slight hover effect for better UX */
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .logout {
+        padding: 6px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar .logout i {
+        font-size: 0.9rem; /* Resize icon for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+#aisc {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+#navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#navbar-links a:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+}
+
+#nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.user-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.user-button:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    animation: sidebarSlideIn 0.8s ease-in-out;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f3c88;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s;
+}
+
+.sidebar li:hover {
+    background-color: #1f3c88;
+    color: white;
+    transform: translateX(5px);
+}
+
+.sidebar i {
+    margin-right: 10px;
+    color: #1f3c88;
+}
+
+/* Breadcrumb Styling */
+.breadcrumb {
+    background-color: #e5e8ef;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumb ul {
+    list-style: none;
+    display: flex;
+}
+
+.breadcrumb ul li {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.breadcrumb ul li:not(:last-child)::after {
+    content: "/";
+    margin-left: 10px;
+    color: #aaa;
+}
+
+/* Main Content */
+#main-content {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+/* Group and Course List Styling */
+.group-list {
+    margin-bottom: 25px;
+}
+
+.group-item {
+    background-color: white;
+    border: 1px solid #d1d9e6;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.course-item {
+    background-color: white;
+    border: 1px solid #d1d9e6;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.course-content {
+    display: flex;
+    align-items: center;
+}
+
+.course-image {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.course-info h2 {
+    font-size: 18px;
+    color: #1f3c88;
+    margin-bottom: 8px;
+}
+
+.course-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.view-details {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #0072ff;
+}
+
+.applied-label {
+    background-color: #00b74a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: modalPopIn 0.5s ease;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1f3c88;
+}
+
+.modal-body p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+}
+
+
+
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/*  */
+
+.group-item:hover {
+    transform: translateY(-8px); /* Slight adjustment for smoother hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/*  */
+
+.dropdown-content {
+    right: 0;
+    min-width: 200px; /* Ensure the dropdown is wide enough for content */
+}
+/* media */
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        box-shadow: none;
+    }
+
+    #main-content {
+        margin-left: 0;
+    }
+}
+
+
+.apply-btn, .close-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.apply-btn {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+}
+
+.apply-btn:hover {
+    background-color: #0072ff;
+}
+
+.apply-btn:active, .close-btn:active {
+    transform: scale(0.95);
+}
+
+.close-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Keyframes for Animations */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes sidebarSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes modalPopIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-item {
+        width: calc(50% - 25px);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-item {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 190px;
+    }
+
+    #main-content {
+        margin-left: 200px;
+    }
+}
+
+
+
+/* responsice media querie */
+@media (max-width: 768px) {
+    #navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #navbar-links a {
+        margin: 10px 0;
+    }
+}
+
+
+/* reset p css */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .user-button {
+    color: #ffeb3b; /* Highlight color on hover */
+}
+
+
+/* group slot styling */
+
+
+
+.group-item {
+    background: linear-gradient(135deg, #6b5b95, #c06c84); /* Gradient background */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(33% - 20px); /* Responsive design */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    position: relative;
+    overflow: hidden;
+}
+
+.group-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.group-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1); /* Semi-transparent overlay */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+    opacity: 0;
+    z-index: 0;
+}
+
+.group-item:hover::before {
+    opacity: 1;
+}
+
+.group-item .group-menu a {
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for button */
+}
+
+.group-item .group-menu a:hover {
+    background: #fff;
+    color: #6b5b95; /* Adjust to match your gradient */
+}
+
+/* logout css */
+
+/* Dropdown styling */
+.logout-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.logout-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.logout-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* For the download button */
+.download-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* For the inactive download button when certificate is not approved */
+.download-btn-inactive {
+    background-color: #d3d3d3; /* Gray color */
+    cursor: not-allowed;
+}
+
+/* For the active download button when certificate is approved */
+.download-btn-active {
+    background-color: #4CAF50; /* Green color */
+    cursor: pointer;
+}
+
+.download-btn-active:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+/* For smooth transition effect when button changes state */
+.download-btn-active, .download-btn-inactive {
+    transition: background-color 0.3s ease;
+}
+
+/* For indicating when hovering over the approved courses or certificates */
+.approved {
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: 1px solid #28a745;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.approved:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly scale up the item when hovered */
+}
+
+.approved a {
+    color: white;
+}
+
+
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; /* Centers it below navbar */
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6b5b95, #c06c84); /* Gradient background */
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+.wrapper span {
+    font-size: 2rem;
+    color: #ffcc00; /* Highlight color for emoji */
+}
+
+#joke-button {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #ff9800; /* Match button styles */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#joke-button:hover {
+    background-color: #f57c00;
+}
+
+#joke-display {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* White text for contrast */
+}
